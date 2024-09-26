@@ -1,0 +1,355 @@
+/* Fonte padrão */
+
+/* Fonte padrão para o corpo */
+body {
+    background-color: #252525;
+    color: #fff;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão para o corpo */
+}
+
+/* Cores de fundo */
+.bg-cor-1 {
+    background-color: #252525;
+}
+
+.bg-cor-2 {
+    background-color: #333333;
+}
+
+.bg-cor-3 {
+    background-color: #82793a;
+}
+
+/* Cores para texto */
+.cor-1 {
+    color: #82793a;
+}
+
+.cor-2 {
+    color: #626262;
+}
+
+.cor-clara {
+    color: #fcf5eb;
+}
+
+.cor-escuro {
+    color: #101010;
+}
+
+/* Estilos para o link da marca */
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif; /* Fonte para a marca */
+}
+
+.navbar-brand:hover {
+    color: #aea7a7;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        text-align: left;
+    }
+}
+
+/* Adicionando estilos para a imagem da marca */
+.img-logo {
+    max-height: 115px;
+    width: auto;
+}
+
+/* Ajuste dos ícones da navbar */
+#navbar-itens {
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os ícones */
+    height: 100%; /* Garante que o container tenha altura total */
+}
+@media (min-width: 768px) {
+    #navbar-itens {
+        min-width: 80%;
+        display: flex;
+    }
+}
+
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navbar .navbar-nav li {
+    margin-left: 1em;
+}
+
+#navbar i {
+    font-size: 1.2rem;
+}
+
+/* Estilo do formulário de pesquisa */
+#form-pesquisa {
+    width: 100%;
+    margin: 2em 0;
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-pesquisa input {
+    color: #ffffff;
+    background-color: #252525;
+    border: 1px solid #252525;
+    padding: 0.5rem;
+}
+
+#form-pesquisa input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#form-pesquisa button {
+    background-color: #82793a;
+    border: none;
+}
+
+/* Estilo da navbar inferior */
+#container-navbar-inferior {
+    background-color: #333333; /* Define a cor de fundo da navbar inferior */
+    padding: 0;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+    color: #fcf5eb; /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #82793a; /* Cor do texto dos links quando passa o mouse */
+}
+
+/* Remove a cor azul padrão dos links e o fundo azul */
+.navbar-nav .nav-link.active {
+    color: #82793a; /* Cor do texto ativo */
+    background-color: transparent; /* Remove qualquer cor de fundo ativa */
+}
+
+.navbar-toggler {
+    border-color: #fcf5eb; /* Define a cor da borda do botão do menu */
+}
+
+.navbar-toggler-icon {
+    background-color: #fcf5eb; /* Define a cor do ícone do botão do menu */
+}
+
+
+/* Estilo para o conteúdo sobre */
+#sobre {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#sobre h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #82793a;
+}
+
+#sobre h5 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #82793a;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+/* Estilo para o contêiner do texto de boas-vindas */
+#BemVindo {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    margin: 0.3em 0; /* Adiciona margem superior e inferior */
+    padding: 1em; /* Adiciona um pouco de preenchimento ao redor do texto */
+    color: #fcf5eb; /* Define a cor do texto, ajuste conforme necessário */
+}
+
+/* Estilo específico para o título */
+#BemVindo h4 {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: #82793a; /* Define a cor do título, ajuste conforme necessário */
+    margin-bottom: 0.5em; /* Adiciona um pouco de espaço abaixo do título */
+}
+
+/* Estilo específico para o parágrafo */
+#BemVindo p {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: #fcf5eb; /* Define a cor do texto do parágrafo */
+    line-height: 1.6; /* Ajusta o espaçamento entre linhas */
+    margin-bottom: 1em; /* Adiciona um pouco de espaço abaixo do parágrafo */
+}
+
+/* Estilo específico para o subtítulo */
+#BemVindo h5 {
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: #82793a; /* Define a cor do subtítulo, ajuste conforme necessário */
+}
+
+
+/* Estilo do rodapé */
+footer {
+    border-top: 1px solid rgba(179, 140, 32);
+    height: 60px; /* Aumente a altura conforme necessário */
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    color: #fff; /* Defina a cor do texto para contraste */
+    position: relative; /* Certifique-se de que o rodapé esteja posicionado corretamente */
+    clear: both; /* Garante que o rodapé fique após o conteúdo anterior */
+}
+
+footer #redes-sociais {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px 0; /* Adicione alguma margem para espaçamento */
+}
+
+footer i {
+    margin: 0 15px; /* Ajuste o espaçamento dos ícones */
+    font-size: 1.3rem;
+    transition: color 0.3s; /* Adicione uma transição suave para hover */
+}
+
+footer i:hover {
+    color: rgb(209, 137, 137); /* Cor do ícone ao passar o mouse */
+}
+
+footer p {
+    margin: 5px 0; /* Margem ajustada para os parágrafos do rodapé */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte se necessário */
+}
+
+/* Garantir que o conteúdo principal não sobreponha o rodapé */
+body {
+    margin: 0;
+    padding-bottom: 80px; /* Espaço suficiente para o rodapé + margem */
+}
+
+
+/* Estilo para a imagem centralizada */
+#img1 {
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+    margin: 2em 0; /* Margem para adicionar espaço ao redor da imagem */
+}
+
+#img1 img {
+    max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: inline-block; /* Faz com que a imagem seja tratada como um bloco inline */
+}
+
+
+/* Estilos para mini banners */
+#mini-banners-container {
+    margin: 20px auto !important; /* Centraliza o contêiner horizontalmente */
+    display: flex !important;
+    justify-content: center !important; /* Centraliza os banners dentro do contêiner */
+    gap: 15px !important; /* Adiciona um espaço entre os banners */
+    flex-wrap: wrap !important; /* Permite que os banners se movam para a linha seguinte se necessário */
+    max-width: 1000px !important; /* Define uma largura máxima para o contêiner (opcional) */
+}
+
+#mini-banners-container .col-12 {
+    padding: 10px !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    flex: 1 !important; /* Faz com que os banners ocupem espaços iguais */
+    max-width: 300px !important; /* Define uma largura máxima para as colunas (opcional) */
+}
+
+#mini-banner-1, #mini-banner-2, #mini-banner-3 {
+    position: relative !important;
+    color: #fff !important;
+    width: 100% !important; /* Garante que os banners tenham a mesma largura */
+}
+
+#mini-banner-1 img, #mini-banner-2 img, #mini-banner-3 img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 8px !important;
+}
+
+#mini-banner-1 a, #mini-banner-2 a, #mini-banner-3 a {
+    display: block !important;
+    margin-top: 10px !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 10px !important;
+    border-radius: 4px !important;
+}
+
+/* Estilo para a seção de banners */
+#carouselExampleCaptions {
+    margin-top: 1.5rem; /* Ajuste o valor conforme necessário para o espaçamento desejado */
+}
+
+/* Estilo para as imagens do carrossel */
+.carousel-inner img {
+    object-fit: cover; /* Garante que as imagens cubram o carrossel sem distorcer */
+    height: 500px; /* Ajuste a altura do carrossel conforme necessário */
+}
+
+/* Ajuste do botão do carrossel */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    top: 50%;
+    height: 50px; /* Tamanho da bolinha */
+    width: 50px; /* Tamanho da bolinha */
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px; /* Tamanho da seta */
+    text-align: center;
+    line-height: 50px; /* Alinha o texto verticalmente */
+    background: #000; /* Cor de fundo da bolinha */
+    color: #fff; /* Cor da seta */
+    border-radius: 50%; /* Forma circular */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23); /* Sombra da bolinha */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    transition: transform 0.1s linear;
+}
+
+/* Adiciona a seta para a esquerda */
+.carousel-control-prev-icon::before {
+    content: '\f104'; /* Código Unicode para seta para a esquerda */
+    font-family: 'FontAwesome'; /* Define a fonte do FontAwesome */
+}
+
+/* Adiciona a seta para a direita */
+.carousel-control-next-icon::before {
+    content: '\f105'; /* Código Unicode para seta para a direita */
+    font-family: 'FontAwesome'; /* Define a fonte do FontAwesome */
+}
+
+
+
+/* Estilo para o texto do banner */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.616); /* Fundo preto com opacidade de 50% para o texto */
+    color: #ffffff; /* Cor do texto */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 4px; /* Arredondar os cantos do fundo, se desejado */
+    border: none; /* Remove qualquer borda */
+    box-shadow: none; /* Remove qualquer sombra */
+}
+
